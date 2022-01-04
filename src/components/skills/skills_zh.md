@@ -1,0 +1,8 @@
+- 深入理解并熟练开发基于 `Vue + Vuex + TypeScript` 的应用
+- 熟悉开发基于 `React + Hooks + Dva + Umi` 的应用
+- 能够基于声网 `Agora SDK` 搭建具有 `RTM 实时消息通讯`、`RTC 视频通话`功能的web平台
+- 了解 Canvas、原型链、继承、作用域、闭包原理，掌握常见跨域技巧
+- 熟悉 ES2015+ 特性，了解前端性能优化与调试技巧，并在项目中大量应用
+- 熟悉 `ElementUI、iView、Antd` 等组件库
+- 熟悉 `Echarts、G2、G6、Graphin、vis` 等可视化库
+- 熟练使用 `Git`, `Webpack`, `Typescript`, `Less`, `js-xlsx`
