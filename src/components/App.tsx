@@ -4,6 +4,7 @@ import { Experience, experienceProps } from './experience'
 import { Skill, skillProps } from './skills'
 import { EducationComponent, educationProps } from './education'
 // import { Knowledge, knowledgeProps } from './knowledge'
+import { Project, projectProps } from './project'
 import { Lang } from '../globalState'
 
 interface AppProps {
@@ -16,6 +17,7 @@ export const App: FC<AppProps> = memo((props) => {
       <Header {...headerProps[props.lang]} />
       <Experience {...experienceProps[props.lang]} />
       <Skill {...skillProps[props.lang]} />
+      <Project {...projectProps[props.lang]} />
       <EducationComponent {...educationProps[props.lang]} />
     </div>
   )
