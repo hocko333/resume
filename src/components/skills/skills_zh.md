@@ -5,4 +5,4 @@
 - 熟悉 ES2015+ 特性，了解前端性能优化与调试技巧，并在项目中大量应用
 - 熟悉 `ElementUI、iView、Antd` 等组件库
 - 熟悉 `Echarts、G2、G6、Graphin、vis` 等可视化库
-- 熟练使用 `Git`, `Webpack`, `Typescript`, `Less`, `js-xlsx`
+- 熟练使用 `Git`, `Webpack`, `Typescript`, `Less`, `js-xlsx`, `MockJs`

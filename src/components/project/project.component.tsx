@@ -1,6 +1,6 @@
 import { FC, memo } from 'react'
 import { Global } from '@emotion/react'
-import ProjectSvg from 'tb-icons/lib/svgs/project.svg'
+import ProjectSvg from 'tb-icons/lib/svgs/project-fill.svg'
 import {
   projectGlobalStyle,
   Title,

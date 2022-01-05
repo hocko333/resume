@@ -7,7 +7,7 @@ const props: {
   zh: {
     name: '程宽',
     email: 'chengkuan689@163.com',
-    site: 'hocko333.github.io',
+    site: 'hocko333.github.io/resume',
     phone: '15010962343',
     github: {
       name: 'hocko333',
