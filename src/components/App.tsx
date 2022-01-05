@@ -13,7 +13,7 @@ interface AppProps {
 
 export const App: FC<AppProps> = memo((props) => {
   return (
-    <div>
+    <div style={{ paddingBottom: 40 }}>
       <Header {...headerProps[props.lang]} />
       <Experience {...experienceProps[props.lang]} />
       <Skill {...skillProps[props.lang]} />
