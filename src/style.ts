@@ -241,5 +241,21 @@ export const globalStyles = css(
     'li ul': {
       marginLeft: '20px',
     },
+
+    '.print-btn': {
+      position: 'fixed',
+      top: '50px',
+      right: '100px',
+      cursor: 'pointer',
+      padding: '10px 10px',
+      border: '1px solid #bbb',
+      borderRadius: '50%',
+      transition: 'transform .9s',
+      '&:hover': {
+        svg: {
+          transform: 'scale(1.2)',
+        }
+      }
+    },
   },
 )

@@ -5,6 +5,7 @@ import { Skill, skillProps } from './skills'
 import { EducationComponent, educationProps } from './education'
 // import { Knowledge, knowledgeProps } from './knowledge'
 import { Project, projectProps } from './project'
+import PrintSvg from 'tb-icons/lib/svgs/print.svg'
 import { Lang } from '../globalState'
 
 interface AppProps {
@@ -19,6 +20,9 @@ export const App: FC<AppProps> = memo((props) => {
       <Skill {...skillProps[props.lang]} />
       <Project {...projectProps[props.lang]} />
       <EducationComponent {...educationProps[props.lang]} />
+      <div className="print-btn" onClick={() => print()}>
+        <PrintSvg />
+      </div>
     </div>
   )
 })
