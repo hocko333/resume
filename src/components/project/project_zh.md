@@ -88,3 +88,34 @@ Js-zip、File-saver 压缩多个文件流并打包下载
 理，使用 Async/await 进行异步流程控制
 - 管理全局状态，使用 Vuex 进行状态管理，使用 vuex-persistedstate 插件实现 Vuex 数
 据状态持久化
+
+==split==
+
+<block class="project-block">
+  <p><span class="project-sub-title">项目描述</span></p>
+</block>
+
+<p class="project-desc" style="margin-left: -20px;">
+接收车险相关案件，通过规则人员编写的规则，对案
+件进行欺诈、渗漏等分析，得出结论并进行减损，实现车险风控的目的。
+</p>
+
+<block class="project-block">
+  <p><span class="project-sub-title">核心技术</span></p>
+</block>
+
+<p class="project-desc" style="margin-left: -20px;">
+Vue、Vue-router、Webpack、Axios、Element-UI、Echarts、ES6+
+</p>
+
+<block class="project-block">
+  <p><span class="project-sub-title">项目职责</span></p>
+</block>
+
+- 参与需求评审并且制定前端开发计划，并与后端确定项目的业务流程和前后端接口
+- 使用 vue 初始化项目并配置项目路由，使用 Element-UI、tree-grid 组件快速构建登录
+和后台管理页面
+- 状态验证功能开发，使用 localStorage 存储后端返回的 token，路由钩子函数验证
+token
+- 时间进行格式化功能开发，自定义 Vue 的 filter 对时间格式化
+- 页面操作功能的实现，包含添加、删除、编辑、分配、分页、级联等功能
