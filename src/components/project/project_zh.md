@@ -119,3 +119,31 @@ Vue、Vue-router、Webpack、Axios、Element-UI、Echarts、ES6+
 token
 - 时间进行格式化功能开发，自定义 Vue 的 filter 对时间格式化
 - 页面操作功能的实现，包含添加、删除、编辑、分配、分页、级联等功能
+
+==split==
+
+<block class="project-block">
+  <p><span class="project-sub-title">项目描述</span></p>
+</block>
+
+<p class="project-desc" style="margin-left: -20px;">
+该项目原本使用传统的后端渲染方式开发，因维护成本较高改为
+前端分离的方式开发，本人负责前端项目的重构，重构为基于 Vue-Cli 和 Webpack 的
+工程化前端项目
+</p>
+
+<block class="project-block">
+  <p><span class="project-sub-title">核心技术</span></p>
+</block>
+
+<p class="project-desc" style="margin-left: -20px;">
+Vue.js、i-View、Axios、Vue-Router、Vue-CLi
+</p>
+
+<block class="project-block">
+  <p><span class="project-sub-title">项目职责</span></p>
+</block>
+
+- 分析原项目的需求和功能，阅读项目代码并且和后端沟通前后端接口
+- 切换项目框架为 Vue-Cli，重构各功能组件并统一管理接口，最后重构实现方法， 实现用户信息认证、用户状态维护等功能
+- 优化页面响应速度，使用 i-View、Less 布局页面和响应式处理，使用 Axios 请求接 口，使用 Vue-Router 管理路由，使用 ajax 异步向后台发送请求
