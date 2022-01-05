@@ -246,7 +246,6 @@ export const globalStyles = css(
       position: 'fixed',
       top: '50px',
       right: '100px',
-      cursor: 'pointer',
       padding: '10px 10px',
       border: '1px solid #bbb',
       borderRadius: '50%',

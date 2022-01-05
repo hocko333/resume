@@ -20,9 +20,9 @@ export const App: FC<AppProps> = memo((props) => {
       <Skill {...skillProps[props.lang]} />
       <Project {...projectProps[props.lang]} />
       <EducationComponent {...educationProps[props.lang]} />
-      <div className="print-btn" onClick={() => print()}>
+      <a href="javascript:window.print();" className="print-btn">
         <PrintSvg />
-      </div>
+      </a>
     </div>
   )
 })
