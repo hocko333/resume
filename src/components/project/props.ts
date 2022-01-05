@@ -22,6 +22,24 @@ const props: {
         roles: ['Creator', 'Owner'],
         content: cnContents[1],
       },
+      {
+        name: '在线理赔系统',
+        time: '2020.12 ~ 2021.3',
+        roles: ['Creator', 'Owner'],
+        content: cnContents[2],
+      },
+      {
+        name: '智能车险风控系统',
+        time: '2019.7 ~ 2021.2',
+        roles: ['Creator', 'Owner'],
+        content: cnContents[3],
+      },
+      {
+        name: '规则平台重构',
+        time: '2019.5 ~ 2019.9',
+        roles: ['Owner', 'Developer'],
+        content: cnContents[4],
+      },
     ],
   },
   get en() {
