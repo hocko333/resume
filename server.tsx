@@ -17,6 +17,10 @@ function render() {
         <meta name="viewport" content="width=device-width, initial-scale=1" />
         <title>程宽的简历</title>
       </head>
+      <style>
+        {'.print-btn { display: block;}'}
+      </style>
+      <style media="print">{'.print-btn { display: none;}'}</style>
       <body>
         <div id="root">
           <Global styles={globalStyles} />
