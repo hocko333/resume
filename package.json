@@ -11,7 +11,8 @@
     "format:json": "prettier --parser json --write './**/*.json'",
     "format:source": "prettier --config ./package.json --write './**/*.{js,ts}'",
     "format:yaml": "prettier --parser yaml --write './**/*.{yml,yaml}'",
-    "start": "webpack-dev-server --config ./tools/webpack.dev.js --progress"
+    "start": "webpack-dev-server --config ./tools/webpack.dev.js --progress",
+    "deploy": "yarn build && git add . && git commit -m 'deploy' && git pull && git push"
   },
   "keywords": ["Resume"],
   "author": "chengkuan689@163.com",
