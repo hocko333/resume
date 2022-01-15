@@ -253,6 +253,7 @@ export const globalStyles = css(
       border: '1px solid #bbb',
       borderRadius: '50%',
       transition: 'transform .9s',
+      backgroundColor: '#fff',
       '&:hover': {
         svg: {
           transform: 'scale(1.2)',
