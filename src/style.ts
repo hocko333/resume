@@ -202,6 +202,9 @@ export const globalStyles = css(
         width: '90%',
         left: '5%',
       },
+      '.print-btn': {
+        display: 'none',
+      },
     },
     code: {
       fontFamily: "'Monaco', 'Courier New'",
