@@ -33,6 +33,22 @@ const config = {
           },
         ],
       },
+      {
+        test: /\.(jpg|png|gif|bmp|jpeg)$/,
+        use: {
+          loader: "url-loader",
+          options: {
+            name: 'image/[name][hash:9].[ext]', // 对打包之后的图片名称进行加密
+            esModule: false,
+            limit: 8 * 1024, // 将小于8kb的图片用based64处理
+          }
+        },
+        type: 'javascript/auto' //转换 json 为 js
+      },
+      {
+        test: /\.(htm|html)$/,
+        loader: 'html-withimg-loader'
+      }
     ],
   },
 

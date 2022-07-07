@@ -14,7 +14,9 @@
     "format:yaml": "prettier --parser yaml --write './**/*.{yml,yaml}'",
     "start": "webpack-dev-server --config ./tools/webpack.dev.js --progress"
   },
-  "keywords": ["Resume"],
+  "keywords": [
+    "Resume"
+  ],
   "author": "chengkuan689@163.com",
   "license": "MIT",
   "devDependencies": {
@@ -27,6 +29,7 @@
     "fork-ts-checker-webpack-plugin": "^6.5.0",
     "html-loader": "^3.0.1",
     "html-webpack-plugin": "^5.5.0",
+    "html-withimg-loader": "^0.1.16",
     "husky": "^7.0.4",
     "lint-staged": "^12.1.5",
     "markdown-loader": "^6.0.0",
@@ -47,8 +50,8 @@
   },
   "dependencies": {
     "@ant-design/icons": "^4.7.0",
-    "@emotion/react": "^11.7.1",
     "@emotion/css": "^11.7.1",
+    "@emotion/react": "^11.7.1",
     "@emotion/styled": "^11.6.0",
     "emotion": "^11.0.0",
     "emotion-server": "^11.0.0",
@@ -66,10 +69,18 @@
     "parser": "typescript"
   },
   "lint-staged": {
-    "*.@(js|ts|tsx)": ["prettier --write"],
-    "*.@(yml|yaml)": ["prettier --parser yaml --write"],
-    "*.md": ["prettier --parser markdown --write"],
-    "*.json": ["prettier --parser json --write"]
+    "*.@(js|ts|tsx)": [
+      "prettier --write"
+    ],
+    "*.@(yml|yaml)": [
+      "prettier --parser yaml --write"
+    ],
+    "*.md": [
+      "prettier --parser markdown --write"
+    ],
+    "*.json": [
+      "prettier --parser json --write"
+    ]
   },
   "husky": {
     "hooks": {

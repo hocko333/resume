@@ -20,12 +20,27 @@ export const HeaderInfoWrapper = styled.div({
   position: 'relative',
 })
 
-export const HeaderInfo = styled.div({
-  width: '40%',
-  display: 'flex',
-  padding: '2.5px 0',
-  alignItems: 'center',
+export const TooltipContent = styled.div({
+  position: 'absolute',
+  top: '50px',
+  width: 0,
+  height: 0,
+  opacity: 0,
+  transition: 'all 0.2s ease-out',
+  overflow: 'hidden',
 })
+
+export const HeaderInfo = styled.div`
+  width: 40%;
+  display: flex;
+  padding: 2.5px 0;
+  alignItems: center;
+  &:hover ${TooltipContent} {
+    opacity: 1;
+    width: 220px;
+    height: 220px;
+  }
+`
 
 export const headerInfoContentStyles = {
   lineHeight: '20px',
