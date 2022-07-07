@@ -38,7 +38,7 @@ const config = {
         use: {
           loader: "url-loader",
           options: {
-            name: '[name][hash:9].[ext]', // 对打包之后的图片名称进行加密
+            name: '[name].[ext]', // 对打包之后的图片名称进行加密
             esModule: false,
             limit: 8 * 1024, // 将小于8kb的图片用based64处理
           }
