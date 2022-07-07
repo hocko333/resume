@@ -20,14 +20,7 @@ export const App: FC<AppProps> = memo((props) => {
       <Skill {...skillProps[props.lang]} />
       <Project {...projectProps[props.lang]} />
       <EducationComponent {...educationProps[props.lang]} />
-      <a
-        onClick={(e) => {
-          e.preventDefault()
-          window.print()
-        }}
-        style={{ cursor: 'pointer' }}
-        className="print-btn"
-      >
+      <a href="javascript:window.print();" className="print-btn">
         <PrintSvg />
       </a>
     </div>
