@@ -14,7 +14,7 @@ import {
   HeaderInfo,
   HeaderInfoContent,
   HeaderInfoContentSpan,
-  TooltipContent,
+  // TooltipContent,
 } from './style'
 
 export interface HeaderProps {
@@ -73,9 +73,9 @@ export const Header: FC<HeaderProps> = memo((props) => (
         <HeaderInfoContentSpan>
           {props.wechat}
         </HeaderInfoContentSpan>
-        <TooltipContent>
+        {/* <TooltipContent>
           <img src={require('./wechat_qrcode.jpg')} alt="" style={{ width: '100%', height: '100%', borderRadius: 8 }} />
-        </TooltipContent>
+        </TooltipContent> */}
       </HeaderInfo>
     </HeaderInfoWrapper>
   </HeaderWrapper>
