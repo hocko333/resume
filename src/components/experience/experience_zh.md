@@ -2,15 +2,15 @@
   <p><span class="experience-sub-title">前端架构</span></p>
 </block>
 
-- 主导基于 k8s 的前端 Gitlab CI/CD 流水线搭建
-- 协调前端开发资源
-- 前端规范建设，提升研发效率
+- 开发前端核心模块，协调前端开发资源
+- 主导前端项目的 Gitlab CI/CD 流水线搭建
 - 前端技术选型 与 架构设计
 
 <block class="experience-block">
   <p><span class="experience-sub-title">团队建设</span></p>
 </block>
 
+- 前端规范建设，提升研发效率
 - 主导前端技术招聘
 - 前端技术培训与分享
 

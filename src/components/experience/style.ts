@@ -37,8 +37,11 @@ export const ExperienceBody = styled.div({
 
 export const WorkTitle = styled.span({
   marginLeft: '15px',
-  fontSize: '14px',
-  fontStyle: 'italic',
+  fontSize: '13px',
+  display: 'inline-block',
+  paddingBottom: '4px',
+  borderBottom: '1px solid #ccc',
+  // fontStyle: 'italic',
 })
 
 export const WorkTime = styled.span({
