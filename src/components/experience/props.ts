@@ -19,17 +19,10 @@ const props: {
       },
       {
         name: '德联易控',
-        time: '2019.5 ~ 2021.3',
+        time: '2018.4 ~ 2021.3',
         title: '前端开发组长',
         content: cnContents[1],
         url: 'http://www.delianyikong.com',
-      },
-      {
-        name: '瑞友科技',
-        time: '2018.4 ~ 2019.5',
-        title: '前端工程师',
-        content: cnContents[2],
-        url: 'http://www.rayootech.com',
       },
     ],
   },
