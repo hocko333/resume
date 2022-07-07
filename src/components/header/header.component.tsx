@@ -7,6 +7,7 @@ import {
   LinkOutlined as Link,
   // ZhihuOutlined as Zhihu,
 } from '@ant-design/icons'
+import { qrCodeData } from './constant'
 import {
   HeaderWrapper,
   Name,
@@ -14,7 +15,7 @@ import {
   HeaderInfo,
   HeaderInfoContent,
   HeaderInfoContentSpan,
-  // TooltipContent,
+  TooltipContent,
 } from './style'
 
 export interface HeaderProps {
@@ -73,9 +74,9 @@ export const Header: FC<HeaderProps> = memo((props) => (
         <HeaderInfoContentSpan>
           {props.wechat}
         </HeaderInfoContentSpan>
-        {/* <TooltipContent>
-          <img src={require('./wechat_qrcode.jpg')} alt="" style={{ width: '100%', height: '100%', borderRadius: 8 }} />
-        </TooltipContent> */}
+        <TooltipContent>
+          <img src={qrCodeData} alt="程宽微信二维码" style={{ width: '100%', height: '100%', borderRadius: 8 }} />
+        </TooltipContent>
       </HeaderInfo>
     </HeaderInfoWrapper>
   </HeaderWrapper>
