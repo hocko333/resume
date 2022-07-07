@@ -15,7 +15,7 @@ export const EducationComponent: FC<EducationProps> = memo((props) => {
   return (
     <Education>
       <TitleWrap>
-        <HumanSvg />
+        <HumanSvg style={{ fontSize: 18 }} />
         <Title>{props.title}</Title>
       </TitleWrap>
       <hr />

@@ -10,6 +10,7 @@ export const TitleWrap = styled.div({
 })
 
 export const Title = styled.span({
+  fontSize: '18px',
   marginLeft: '10px',
 })
 
