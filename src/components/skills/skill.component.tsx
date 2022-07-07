@@ -1,6 +1,6 @@
 import { FC, memo } from 'react'
 import { SkillWrapper, TitleWrapper, Title, Content } from './style'
-import { StarOutlined as Star } from '@ant-design/icons'
+import { CodeOutlined as Code } from '@ant-design/icons'
 
 export interface SkillProps {
   title: string
@@ -14,7 +14,7 @@ export const Skill: FC<SkillProps> = memo((props) => {
   return (
     <SkillWrapper>
       <TitleWrapper>
-        <Star />
+        <Code style={{ fontSize: 18 }} />
         <Title>{props.title}</Title>
       </TitleWrapper>
       <hr />

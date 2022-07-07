@@ -49,7 +49,7 @@ export const Experience: FC<ExperienceProps> = memo((props) => {
   return (
     <ExperienceWrapper>
       <Title>
-        <TieSvg />
+        <TieSvg style={{ fontSize: 18 }} />
         <TitleContent>{props.title}</TitleContent>
       </Title>
       <hr />

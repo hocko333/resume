@@ -3,24 +3,26 @@
 </block>
 
 <p class="project-desc" style="margin-left: -20px;">
-API安全智能平台，扫描、拦截、发现API中的漏洞和风险
+萤火·API智能防护引擎 通过API统一管控、API风险发现、API实时监控技术，对每个用户、设备、业务的行为模式进行自动分析建模，应对漏洞攻击、黑客入侵、数据泄露以及账号滥用风险。
 </p>
 
 <block class="project-block">
-  <p><span class="project-sub-title">核心技术</span></p>
+  <p><span class="project-sub-title">前端技术栈</span></p>
 </block>
 
 <p class="project-desc" style="margin-left: -20px;">
-React、Umi、Antd、G6、MockJs、Lint、Prettier
+React、Umi、Antd、G2Plot、MockJs、ahooks、Prettier
 </p>
 
 <block class="project-block">
   <p><span class="project-sub-title">项目职责</span></p>
 </block>
 
-- 前端技术选型与架构设计，前端项目管理，自动化部署，code review
-- 基于Antd封装业务组件，开发资产管理、分类分级、安全风险、多维画像等业务模块
-- Fork ali-react-table 仓库，根据业务需求修改源码，并独立发布 react-magic-tables npm 包
+- 负责前端技术选型与架构设计，前端项目管理，自动化部署，Code Review
+- 基于 `G2Plot`、`ProList`、`Typography` 等组件开发 **API资产** 模块，清晰展示API的主机、被攻击的次数和时间、攻击源、攻击手段等信息，绑定API与业务应用的关系
+- 基于 `ScatterChart`、`Heatmap` 开发 **API/IP画像** 模块，通过数组的 `map`、`reduce` 方法，对象的 `entries`、`values` 方法，实现对数据的动态补偿
+- 基于 `useSessionStorage`、`QueryFilter`、`ProTable` 开发 **事件风险** 模块，表现识别到的风险，以及通过风险类型、威胁等级等多维度进行检索，并实现页面关键状态的持久化
+- Fork `ali-react-table` 仓库，根据业务需求修改源码，并独立发布 `react-magic-tables` npm 包
 - 基于 G6 图可视化引擎，开发资产拓扑图，实现大数据量节点快速绘制
 - 基于 G2Plot 图表库，开发数据可视化组件
 
@@ -35,7 +37,7 @@ React、Umi、Antd、G6、MockJs、Lint、Prettier
 </p>
 
 <block class="project-block">
-  <p><span class="project-sub-title">核心技术</span></p>
+  <p><span class="project-sub-title">前端技术栈</span></p>
 </block>
 
 <p class="project-desc" style="margin-left: -20px;">
@@ -49,7 +51,7 @@ Vue、Vuex、Vue-Router、Axios、Echarts、ElementUI、Less
 - 前端技术选型和架构设计，搭建 Nginx web服务器，发布与部署上线
 - 基于 Vue 搭建项目结构，Vue-Router 开发前端路由，控制角色权限
 - 封装 Vuex 模块，管理全局状态，结合 LocalStorage 实现状态持久化
-- 基于 ElementUI 封装业务组件，开发安全总览、资产测绘、安全事件、生命周期等业务模块
+- 基于 ElementUI 封装业务组件，开发 安全总览、资产测绘、安全事件、生命周期 等业务模块
 - 基于 Echarts 绘制网络关系图，及事件风险、线上资产等可视化模块
 - 封装 Axios 统一管理项目 API
 
@@ -66,19 +68,19 @@ OSS 服务器
 </p>
 
 <block class="project-block">
-  <p><span class="project-sub-title">核心技术</span></p>
+  <p><span class="project-sub-title">前端技术栈</span></p>
 </block>
 
 <p class="project-desc" style="margin-left: -20px;">
-Agora-RTM-SDK、Agora-RTC-SDK、Vue.js、Vue-Router、Vuex、
-Webpack、Axios、Element-UI、Echarts、js-xlsx、file-saver
+Vue.js、Agora-RTM、Agora-RTC、Vue-Router、Vuex、
+Webpack、Axios、Element-UI、Echarts、Js-xlsx、File-saver
 </p>
 
 <block class="project-block">
   <p><span class="project-sub-title">项目职责</span></p>
 </block>
 
-- 搭建实时通讯平台，基于 agora-rtm-sdk、agora-rtc-sdk 开发
+- 基于 Agora-rtm-sdk、Agora-rtc-sdk 开发，搭建实时通讯平台
 - 开发前端页面布局，选用 Element-UI 的通知、表单、弹框、栅格布局等组件
 - 搭建项目结构，使用 Vue-cli 定向配置 Webpack、Eslint、按需引入、路由懒加载， 配置多环境以及路由权限控制
 - 数据的解析与保存，使用 Js-xlsx 解析 Excel 文件为 json 数据提交至后端保存，使用
@@ -101,7 +103,7 @@ Js-zip、File-saver 压缩多个文件流并打包下载
 </p>
 
 <block class="project-block">
-  <p><span class="project-sub-title">核心技术</span></p>
+  <p><span class="project-sub-title">前端技术栈</span></p>
 </block>
 
 <p class="project-desc" style="margin-left: -20px;">
@@ -133,7 +135,7 @@ token
 </p>
 
 <block class="project-block">
-  <p><span class="project-sub-title">核心技术</span></p>
+  <p><span class="project-sub-title">前端技术栈</span></p>
 </block>
 
 <p class="project-desc" style="margin-left: -20px;">

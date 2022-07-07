@@ -50,7 +50,7 @@ export const Project: FC<ProjectProps> = memo((props) => {
   return (
     <ProjectWrapper>
       <Title>
-        <ProjectSvg />
+        <ProjectSvg style={{ fontSize: 18 }} />
         <TitleContent>{props.title}</TitleContent>
       </Title>
       <hr />

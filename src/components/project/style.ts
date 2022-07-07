@@ -25,6 +25,7 @@ export const Title = styled.div({
 })
 
 export const TitleContent = styled.span({
+  fontSize: '18px',
   marginLeft: '10px',
 })
 
