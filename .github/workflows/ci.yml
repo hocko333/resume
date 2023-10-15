@@ -1,43 +1,51 @@
-name: GitHub Actions Build and Deploy Resume
+# 将静态内容部署到 GitHub Pages 的简易工作流程
+name: Deploy static content to Pages
 
 on:
-  push: # 指定触发事件
-    branches:
-      - main # 指定触发 action 的分支
+  # 仅在推送到默认分支时运行。
+  push:
+    branches: ['main']
+
+  # 这个选项可以使你手动在 Action tab 页面触发工作流
+  workflow_dispatch:
+
+# 设置 GITHUB_TOKEN 的权限，以允许部署到 GitHub Pages。
+permissions:
+  contents: read
+  pages: write
+  id-token: write
+
+# 允许一个并发的部署
+concurrency:
+  group: 'pages'
+  cancel-in-progress: true
 
 jobs:
-  build-and-deploy:
+  # 单次部署的工作描述
+  deploy:
+    environment:
+      name: github-pages
+      url: ${{ steps.deployment.outputs.page_url }}
     runs-on: ubuntu-latest
     steps:
-      # 拉取github仓库代码
       - name: Checkout
-        uses: actions/checkout@v2
-          with:
-            persist-credentials: false
-        uses: pnpm/action-setup@v2
-          with:
-            version: 8
+        uses: actions/checkout@v3
+      - name: Set up Node
         uses: actions/setup-node@v3
-          with:
-            node-version: 18
-            cache: 'pnpm'
-
-      # 执行依赖安装
-      - name: 安装依赖
-        run: |
-          pnpm install
-
-      # 执行构建步骤
-      - name: 构建
-        run: |
-          pnpm run build
-      # 执行部署
-      - name: 部署
-        uses: peaceiris/actions-gh-pages@v3
         with:
-          github_token: ${{ secrets.SECRET_TOKEN }}
-          # Build output to publish to the `gh-pages` branch:
-          publish_dir: dist # 文档打包产物的目录名就是build
-          user_name: 'github-actions[bot]'
-          user_email: 'github-actions[bot]@users.noreply.github.com'
-          commit_message: ${{ github.event.head_commit.message }}
+          node-version: 18
+          cache: 'npm'
+      - name: Install dependencies
+        run: npm install
+      - name: Build
+        run: npm run build
+      - name: Setup Pages
+        uses: actions/configure-pages@v3
+      - name: Upload artifact
+        uses: actions/upload-pages-artifact@v1
+        with:
+          # Upload dist repository
+          path: './dist'
+      - name: Deploy to GitHub Pages
+        id: deployment
+        uses: actions/deploy-pages@v1
