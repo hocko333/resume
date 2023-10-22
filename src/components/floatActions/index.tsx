@@ -1,5 +1,5 @@
 import React, { useCallback } from 'react'
-import { HiddenOnMobileAndPrint } from './style'
+import { FloatActionsWrapper } from './style'
 import { Button, Divider, Space } from 'antd'
 import { FaMoon } from 'react-icons/fa'
 import { MdWbSunny } from 'react-icons/md'
@@ -19,11 +19,12 @@ const FloatActions: React.FC = () => {
   }, [])
 
   return (
-    <HiddenOnMobileAndPrint>
+    <FloatActionsWrapper>
       <Space
         split={
           <Divider
             type="vertical"
+            className='hide-on-mobile'
             style={{ margin: 0, height: 20, borderColor: '#ddd' }}
           />
         }
@@ -37,7 +38,7 @@ const FloatActions: React.FC = () => {
             onClick={onThemeChange}
           />
         </div>
-        <div style={{ padding: 4 }}>
+        <div className='hide-on-mobile' style={{ padding: 4 }}>
           <Button
             type="text"
             icon={<BsFillCloudDownloadFill />}
@@ -46,7 +47,7 @@ const FloatActions: React.FC = () => {
           />
         </div>
       </Space>
-    </HiddenOnMobileAndPrint>
+    </FloatActionsWrapper>
   )
 }
 

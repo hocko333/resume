@@ -1,6 +1,6 @@
 import styled from '@emotion/styled'
 
-export const HiddenOnMobileAndPrint = styled.div`
+export const FloatActionsWrapper = styled.div`
   display: block;
   position: fixed;
   top: 50px;
@@ -18,9 +18,6 @@ export const HiddenOnMobileAndPrint = styled.div`
     box-shadow: 0 4px 4px -4px rgba(0, 0, 0, 0.2), 0 7px 10px 0 rgba(0, 0, 0, 0.16), 0 7px 16px 6px rgba(0, 0, 0, 0.11);
   }
 
-  @media (max-width: 600px) {
-    display: none;
-  }
   @media print {
     display: none;
   }
