@@ -20,10 +20,10 @@ export const globalStyles = css(
     --text-color: white;
     --bgc: #161f32;
     --hr-color: #6e6e6e;
-    --float-actions-bgc: #1f2024;
-    --float-actions-border-color: #585858;
+    --float-actions-bgc: #27282e;
+    --float-actions-border-color: #343434;
     --p-text-color: #cccccc;
-    --ant-float-btn-bgc: #1f2024;
+    --ant-float-btn-bgc: #27282e;
   }
 
   @media print {
