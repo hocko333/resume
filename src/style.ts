@@ -236,10 +236,16 @@ export const globalStyles = css(
     '@media (max-width: 600px)': {
       '#root': {
         width: '90%',
-        left: '5%',
+        // left: '5%',
       },
       '.hide-on-mobile': {
         display: 'none',
+      },
+    },
+    '@media (min-width: 601px) and (max-width: 940px)': {
+      '#root': {
+        marginLeft: 24,
+        marginRight: 24,
       },
     },
     code: {
