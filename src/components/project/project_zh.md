@@ -9,7 +9,7 @@
   <p><span class="project-sub-title">前端技术栈</span></p>
 </block>
 
-`React / Recoil / Umi / TailwindCSS / immer / TypeScript / Antd / MockJs / ahooks`
+`React / Recoil / Umi / TypeScript / immer / TailwindCSS / Antd / MockJs / ahooks`
 
 <block class="project-block">
   <p><span class="project-sub-title">项目职责</span></p>
@@ -19,7 +19,7 @@
 - 使用 `Recoil` 替换 `Umi` 自带的 `Dva`，实现更轻量便捷的Hook化共享状态管理
 - 基于 `ScatterChart`、`Heatmap` 开发 **API/IP画像** 模块，通过数组的 `map`、`reduce` 方法，对象的 `entries`、`values` 方法，实现对数据的动态补偿
 - 基于 `useSessionStorage`、`QueryFilter`、`ProTable` 开发 **事件风险** 模块，通过风险类型、威胁等级等多维度进行检索，并实现页面关键状态的持久化
-- 封装基础组件，并**独立发布** `react-magic-tables` NPM包
+- 封装 **100+** 通用业务组件，并**独立发布** `react-magic-tables` NPM包
 - 基于 `G6`、`G2Plot`，开发资产拓扑图等数据可视化组件，实现大数据量节点快速绘制
 - 与运维一起推进 CI/CD 标准化，以及 **alpha/dev/staging/hotfix/production** 多套环境的自动化部署机制
 
