@@ -35,6 +35,13 @@ export const Body = styled.div({
 
 export const ProjectBody = styled.div({
   padding: '5px 20px',
+
+  blockquote: {
+    fontSize: 14,
+    marginLeft: -20,
+    borderLeftWidth: 2,
+    borderLeftColor: 'var(--hr-color)',
+  },
 })
 
 export const Roles = styled.span({

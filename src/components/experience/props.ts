@@ -12,17 +12,24 @@ const props: {
     companies: [
       {
         name: '星阑科技',
-        time: '2021.3 ~ now',
-        title: '前端开发负责人',
+        time: '2021.3 ~ 2024.5',
+        title: '前端开发组长',
         content: cnContents[0],
         url: 'http://www.starcross.cn',
       },
       {
         name: '德联易控',
-        time: '2018.4 ~ 2021.3',
-        title: '前端开发组长',
+        time: '2019.12 ~ 2021.3',
+        title: '前端开发工程师',
         content: cnContents[1],
         url: 'http://www.delianyikong.com',
+      },
+      {
+        name: '敏捷艾科',
+        time: '2018.6 ~ 2019.12',
+        title: '前端开发工程师',
+        content: cnContents[2],
+        url: 'https://www.agileex.com',
       },
     ],
   },

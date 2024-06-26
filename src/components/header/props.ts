@@ -18,6 +18,8 @@ const props: {
       url: 'https://www.zhihu.com',
     },
     wechat: 'nothingtosay333',
+    exp: '工作经验 6 年',
+    location: '北京',
   },
   get en() {
     return {

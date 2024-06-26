@@ -5,6 +5,7 @@ import {
   // GithubOutlined as Github,
   PhoneOutlined as Phone,
   LinkOutlined as Link,
+  LaptopOutlined as Laptop,
   // ZhihuOutlined as Zhihu,
 } from '@ant-design/icons'
 import { qrCodeData } from './constant'
@@ -18,6 +19,7 @@ import {
   ModifiedParagraph,
 } from './style'
 import { Popover } from 'antd'
+import LocationSvg from 'tb-icons/lib/svgs/location.svg?react'
 
 export interface HeaderProps {
   name: string
@@ -33,6 +35,8 @@ export interface HeaderProps {
     url: string
   }
   wechat: string
+  exp: string
+  location: string
 }
 
 export const Header: FC<HeaderProps> = memo((props) => (
@@ -46,11 +50,17 @@ export const Header: FC<HeaderProps> = memo((props) => (
           <ModifiedParagraph copyable>{props.email}</ModifiedParagraph>
         </HeaderInfoContent>
       </HeaderInfo>
-      <HeaderInfo>
+      {/* <HeaderInfo>
         <Link />
         <HeaderInfoContent href={`https://${props.site}`} target="_blank">
           <ModifiedParagraph copyable={{ text: `https://${props.site}` }}>{props.site}</ModifiedParagraph>
         </HeaderInfoContent>
+      </HeaderInfo> */}
+      <HeaderInfo>
+        <Laptop />
+        <HeaderInfoContentSpan>
+          <ModifiedParagraph>{props.exp}</ModifiedParagraph>
+        </HeaderInfoContentSpan>
       </HeaderInfo>
       <HeaderInfo>
         <Phone />
@@ -86,6 +96,18 @@ export const Header: FC<HeaderProps> = memo((props) => (
             <ModifiedParagraph copyable>{props.wechat}</ModifiedParagraph>
           </HeaderInfoContentSpan>
         </Popover>
+      </HeaderInfo>
+      <HeaderInfo>
+        <Link />
+        <HeaderInfoContent href={`https://${props.site}`} target="_blank">
+          <ModifiedParagraph copyable={{ text: `https://${props.site}` }}>{props.site}</ModifiedParagraph>
+        </HeaderInfoContent>
+      </HeaderInfo>
+      <HeaderInfo>
+        <LocationSvg style={{ fontSize: 18, fill: 'var(--text-color)' }} />
+        <HeaderInfoContentSpan>
+          <ModifiedParagraph>{props.location}</ModifiedParagraph>
+        </HeaderInfoContentSpan>
       </HeaderInfo>
     </HeaderInfoWrapper>
   </HeaderWrapper>

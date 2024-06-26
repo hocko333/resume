@@ -1,8 +1,8 @@
 - 熟悉开发基于 `React + Recoil + TailwindCSS + Umi + TypeScript` 的应用
-- 熟练开发基于 `Vue` 的应用
+- 熟练开发基于 `Vue2` + `Vuex` 以及 `Vue3` + `Pinia` 的应用
 - 能够基于声网 `Agora` 搭建具有 `RTM 实时消息通讯`、`RTC 视频通话`功能的web平台
 - 独立开发过多个 `Web` 应用，并有严重的代码洁癖
 - 熟悉 `ES6+` 特性，了解前端性能优化与调试技巧，并在项目中大量应用
 - 基于 `Google Analytics` 实现页面埋点，分析用户行为
 - 熟悉 `Echarts、G2、G6、X6、vis` 等可视化库
-- 熟练使用 `Git`, `immer`, `Less`, `js-xlsx`, `MockJs`, `ApiFox`
+- 熟练使用 `Git`, `immer`, `Less`, `Strapi`, `MockJs`, `ApiFox`

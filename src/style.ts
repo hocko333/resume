@@ -36,6 +36,10 @@ export const globalStyles = css(
       --p-text-color: #24292e;
       --ant-float-btn-bgc: white;
     }
+
+    button.ant-float-btn-default {
+      display: none;
+    }
   }
   
   html,
