@@ -41,6 +41,11 @@ export const globalStyles = css(
     div.ant-message {
       display: none;
     }
+
+    .empty-holder {
+      display: block !important;
+      height: 70px !important;
+    }
   }
   
   html,
@@ -137,6 +142,11 @@ export const globalStyles = css(
   nav,
   section {
     display: block;
+  }
+
+  .empty-holder {
+    display: none;
+    height: 0;
   }
 
   nav ul {
