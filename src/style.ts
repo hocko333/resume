@@ -37,7 +37,8 @@ export const globalStyles = css(
       --ant-float-btn-bgc: white;
     }
 
-    button.ant-float-btn-default {
+    button.ant-float-btn-default,
+    div.ant-message {
       display: none;
     }
   }
